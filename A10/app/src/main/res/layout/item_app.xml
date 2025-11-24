@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/ivAppIcon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@android:drawable/sym_def_app_icon"
+        android:scaleType="centerCrop"
+        android:background="#E0E0E0" />
+
+    <TextView
+        android:id="@+id/tvAppName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="App Name"
+        android:textSize="12sp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/tvAppRating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="4.5 ★"
+        android:textSize="10sp"
+        android:textColor="#757575" />
+
+</LinearLayout>

@@ -1,4 +1,4 @@
-package com.example.hoc
+package com.example.a09
 
 import android.app.Activity
 import android.content.Intent
@@ -15,29 +15,11 @@ class MainActivity : Activity() {
         setContentView(R.layout.activity_main)
         
         findViewById<Button>(R.id.btnCalculator).setOnClickListener {
-            startActivity(Intent(this, CalcActivity::class.java))
+            startActivity(Intent(this, ConvertActivity::class.java))
         }
         
         findViewById<Button>(R.id.btnInfo).setOnClickListener {
-            startActivity(Intent(this, InfoActivity::class.java))
-        }
-
-        val listView = findViewById<ListView>(R.id.listView);
-        listView.adapter = ArrayAdapter(
-            this,
-            R.layout.list_item,
-            listOf("123", "123"),
-        );
-        listView.onItemClickListener = object : AdapterView.OnItemClickListener {
-            override fun onItemClick(
-                parent: AdapterView<*>?,
-                view: View?,
-                position: Int,
-                id: Long
-            ) {
-                TODO("Not yet implemented")
-            }
-
+            startActivity(Intent(this, IntegerActivity::class.java))
         }
     }
 }

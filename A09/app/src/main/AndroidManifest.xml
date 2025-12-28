@@ -22,6 +22,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ConvertActivity"
+            android:label="Chuyển đổi tiền tệ"
+            android:theme="@style/Theme.A09" />
+        <activity
+            android:name=".IntegerActivity"
+            android:label="Danh sách số nguyên"
+            android:theme="@style/Theme.A09" />
     </application>
 
 </manifest>

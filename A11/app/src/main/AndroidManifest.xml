@@ -21,18 +21,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".StudentListActivity"
-            android:label="Danh sách sinh viên"
-            android:theme="@style/Theme.A11" />
-        <activity
-            android:name=".AddStudentActivity"
-            android:label="Thêm sinh viên"
-            android:theme="@style/Theme.A11" />
-        <activity
-            android:name=".StudentDetailActivity"
-            android:label="Chi tiết sinh viên"
-            android:theme="@style/Theme.A11" />
     </application>
 
 </manifest>

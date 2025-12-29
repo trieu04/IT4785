@@ -32,4 +32,10 @@ class StudentAdapter(
     }
 
     override fun getItemCount(): Int = students.size
+
+    fun updateData(newStudents: List<Student>) {
+        students.clear()
+        students.addAll(newStudents)
+        notifyDataSetChanged()
+    }
 }

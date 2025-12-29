@@ -1,0 +1,209 @@
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:checkKotlinGradlePluginConfigurationErrors
+> Task :app:dataBindingMergeDependencyArtifactsDebug UP-TO-DATE
+> Task :app:generateDebugResValues UP-TO-DATE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:mergeDebugResources UP-TO-DATE
+> Task :app:packageDebugResources UP-TO-DATE
+> Task :app:parseDebugLocalResources UP-TO-DATE
+> Task :app:dataBindingGenBaseClassesDebug UP-TO-DATE
+> Task :app:dataBindingTriggerDebug UP-TO-DATE
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+> Task :app:processDebugMainManifest UP-TO-DATE
+> Task :app:processDebugManifest UP-TO-DATE
+> Task :app:processDebugManifestForPackage UP-TO-DATE
+> Task :app:processDebugResources UP-TO-DATE
+> Task :app:compileDebugKotlin UP-TO-DATE
+> Task :app:javaPreCompileDebug UP-TO-DATE
+
+> Task :app:compileDebugJavaWithJavac
+error: cannot generate view binders java.lang.UnsupportedClassVersionError: android/databinding/parser/BindingExpressionBaseVisitor has been compiled by a more recent version of the Java Runtime (class file version 61.0), this version of the Java Runtime only recognizes class file versions up to 55.0
+  	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+  	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1022)
+  	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:174)
+  	at java.base/java.net.URLClassLoader.defineClass(URLClassLoader.java:555)
+  	at java.base/java.net.URLClassLoader$1.run(URLClassLoader.java:458)
+  	at java.base/java.net.URLClassLoader$1.run(URLClassLoader.java:452)
+  	at java.base/java.security.AccessController.doPrivileged(Native Method)
+  	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:451)
+  	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:594)
+  	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:527)
+  	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+  	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1022)
+  	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:174)
+  	at java.base/java.net.URLClassLoader.defineClass(URLClassLoader.java:555)
+  	at java.base/java.net.URLClassLoader$1.run(URLClassLoader.java:458)
+  	at java.base/java.net.URLClassLoader$1.run(URLClassLoader.java:452)
+  	at java.base/java.security.AccessController.doPrivileged(Native Method)
+  	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:451)
+  	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:594)
+  	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:527)
+  	at android.databinding.tool.ExpressionParser.<init>(ExpressionParser.java:50)
+  	at android.databinding.tool.LayoutBinder.<init>(LayoutBinder.java:80)
+  	at android.databinding.tool.DataBinder.<init>(DataBinder.java:61)
+  	at android.databinding.tool.CompilerChef.ensureDataBinder(CompilerChef.java:118)
+  	at android.databinding.tool.CompilerChef.sealModels(CompilerChef.java:370)
+  	at android.databinding.annotationprocessor.ProcessExpressions.writeResourceBundle(ProcessExpressions.java:245)
+  	at android.databinding.annotationprocessor.ProcessExpressions.onHandleStep(ProcessExpressions.java:125)
+  	at android.databinding.annotationprocessor.ProcessDataBinding$ProcessingStep.runStep(ProcessDataBinding.java:246)
+  	at android.databinding.annotationprocessor.ProcessDataBinding.doProcess(ProcessDataBinding.java:112)
+  	at android.databinding.annotationprocessor.ProcessDataBinding.process(ProcessDataBinding.java:87)
+  	at org.gradle.api.internal.tasks.compile.processing.DelegatingProcessor.process(DelegatingProcessor.java:62)
+  	at org.gradle.api.internal.tasks.compile.processing.DynamicProcessor.process(DynamicProcessor.java:52)
+  	at org.gradle.api.internal.tasks.compile.processing.DelegatingProcessor.process(DelegatingProcessor.java:62)
+  	at org.gradle.api.internal.tasks.compile.processing.TimeTrackingProcessor.access$401(TimeTrackingProcessor.java:37)
+  	at org.gradle.api.internal.tasks.compile.processing.TimeTrackingProcessor$5.create(TimeTrackingProcessor.java:99)
+  	at org.gradle.api.internal.tasks.compile.processing.TimeTrackingProcessor$5.create(TimeTrackingProcessor.java:96)
+  	at org.gradle.api.internal.tasks.compile.processing.TimeTrackingProcessor.track(TimeTrackingProcessor.java:117)
+  	at org.gradle.api.internal.tasks.compile.processing.TimeTrackingProcessor.process(TimeTrackingProcessor.java:96)
+  	at jdk.compiler/com.sun.tools.javac.processing.JavacProcessingEnvironment.callProcessor(JavacProcessingEnvironment.java:985)
+  	at jdk.compiler/com.sun.tools.javac.processing.JavacProcessingEnvironment.discoverAndRunProcs(JavacProcessingEnvironment.java:901)
+  	at jdk.compiler/com.sun.tools.javac.processing.JavacProcessingEnvironment$Round.run(JavacProcessingEnvironment.java:1227)
+  	at jdk.compiler/com.sun.tools.javac.processing.JavacProcessingEnvironment.doProcessing(JavacProcessingEnvironment.java:1340)
+  	at jdk.compiler/com.sun.tools.javac.main.JavaCompiler.processAnnotations(JavaCompiler.java:1254)
+  	at jdk.compiler/com.sun.tools.javac.main.JavaCompiler.compile(JavaCompiler.java:936)
+  	at jdk.compiler/com.sun.tools.javac.api.JavacTaskImpl.lambda$doCall$0(JavacTaskImpl.java:104)
+  	at jdk.compiler/com.sun.tools.javac.api.JavacTaskImpl.handleExceptions(JavacTaskImpl.java:147)
+  	at jdk.compiler/com.sun.tools.javac.api.JavacTaskImpl.doCall(JavacTaskImpl.java:100)
+  	at jdk.compiler/com.sun.tools.javac.api.JavacTaskImpl.call(JavacTaskImpl.java:94)
+  	at org.gradle.internal.compiler.java.IncrementalCompileTask.call(IncrementalCompileTask.java:92)
+  	at org.gradle.api.internal.tasks.compile.AnnotationProcessingCompileTask.call(AnnotationProcessingCompileTask.java:94)
+  	at org.gradle.api.internal.tasks.compile.ResourceCleaningCompilationTask.call(ResourceCleaningCompilationTask.java:57)
+  	at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:83)
+  	at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:50)
+  	at org.gradle.api.internal.tasks.compile.daemon.AbstractIsolatedCompilerWorkerExecutor$CompilerWorkAction.execute(AbstractIsolatedCompilerWorkerExecutor.java:78)
+  	at org.gradle.workers.internal.DefaultWorkerServer.execute(DefaultWorkerServer.java:63)
+  	at org.gradle.workers.internal.AbstractClassLoaderWorker$1.create(AbstractClassLoaderWorker.java:54)
+  	at org.gradle.workers.internal.AbstractClassLoaderWorker$1.create(AbstractClassLoaderWorker.java:48)
+  	at org.gradle.internal.classloader.ClassLoaderUtils.executeInClassloader(ClassLoaderUtils.java:100)
+  	at org.gradle.workers.internal.AbstractClassLoaderWorker.executeInClassLoader(AbstractClassLoaderWorker.java:48)
+  	at org.gradle.workers.internal.FlatClassLoaderWorker.run(FlatClassLoaderWorker.java:32)
+  	at org.gradle.workers.internal.FlatClassLoaderWorker.run(FlatClassLoaderWorker.java:22)
+  	at org.gradle.workers.internal.WorkerDaemonServer.run(WorkerDaemonServer.java:107)
+  	at org.gradle.workers.internal.WorkerDaemonServer.run(WorkerDaemonServer.java:76)
+  	at org.gradle.process.internal.worker.request.WorkerAction$1.call(WorkerAction.java:176)
+  	at org.gradle.process.internal.worker.child.WorkerLogEventListener.withWorkerLoggingProtocol(WorkerLogEventListener.java:41)
+  	at org.gradle.process.internal.worker.request.WorkerAction.lambda$run$1(WorkerAction.java:173)
+  	at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:85)
+  	at org.gradle.process.internal.worker.request.WorkerAction.run(WorkerAction.java:165)
+  	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+  	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+  	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+  	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+  	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+  	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
+  	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+  	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:48)
+  	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+  	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+  	at java.base/java.lang.Thread.run(Thread.java:829)
+1 error
+
+> Task :app:compileDebugJavaWithJavac FAILED
+
+[Incubating] Problems report is available at: file:///home/ntdm/o--hust/o-hust--it4785/A11/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileDebugJavaWithJavac'.
+> Compilation failed; see the compiler output below.
+  error: cannot generate view binders java.lang.UnsupportedClassVersionError: android/databinding/parser/BindingExpressionBaseVisitor has been compiled by a more recent version of the Java Runtime (class file version 61.0), this version of the Java Runtime only recognizes class file versions up to 55.0
+    	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+    	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1022)
+    	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:174)
+    	at java.base/java.net.URLClassLoader.defineClass(URLClassLoader.java:555)
+    	at java.base/java.net.URLClassLoader$1.run(URLClassLoader.java:458)
+    	at java.base/java.net.URLClassLoader$1.run(URLClassLoader.java:452)
+    	at java.base/java.security.AccessController.doPrivileged(Native Method)
+    	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:451)
+    	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:594)
+    	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:527)
+    	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+    	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1022)
+    	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:174)
+    	at java.base/java.net.URLClassLoader.defineClass(URLClassLoader.java:555)
+    	at java.base/java.net.URLClassLoader$1.run(URLClassLoader.java:458)
+    	at java.base/java.net.URLClassLoader$1.run(URLClassLoader.java:452)
+    	at java.base/java.security.AccessController.doPrivileged(Native Method)
+    	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:451)
+    	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:594)
+    	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:527)
+    	at android.databinding.tool.ExpressionParser.<init>(ExpressionParser.java:50)
+    	at android.databinding.tool.LayoutBinder.<init>(LayoutBinder.java:80)
+    	at android.databinding.tool.DataBinder.<init>(DataBinder.java:61)
+    	at android.databinding.tool.CompilerChef.ensureDataBinder(CompilerChef.java:118)
+    	at android.databinding.tool.CompilerChef.sealModels(CompilerChef.java:370)
+    	at android.databinding.annotationprocessor.ProcessExpressions.writeResourceBundle(ProcessExpressions.java:245)
+    	at android.databinding.annotationprocessor.ProcessExpressions.onHandleStep(ProcessExpressions.java:125)
+    	at android.databinding.annotationprocessor.ProcessDataBinding$ProcessingStep.runStep(ProcessDataBinding.java:246)
+    	at android.databinding.annotationprocessor.ProcessDataBinding.doProcess(ProcessDataBinding.java:112)
+    	at android.databinding.annotationprocessor.ProcessDataBinding.process(ProcessDataBinding.java:87)
+    	at org.gradle.api.internal.tasks.compile.processing.DelegatingProcessor.process(DelegatingProcessor.java:62)
+    	at org.gradle.api.internal.tasks.compile.processing.DynamicProcessor.process(DynamicProcessor.java:52)
+    	at org.gradle.api.internal.tasks.compile.processing.DelegatingProcessor.process(DelegatingProcessor.java:62)
+    	at org.gradle.api.internal.tasks.compile.processing.TimeTrackingProcessor.access$401(TimeTrackingProcessor.java:37)
+    	at org.gradle.api.internal.tasks.compile.processing.TimeTrackingProcessor$5.create(TimeTrackingProcessor.java:99)
+    	at org.gradle.api.internal.tasks.compile.processing.TimeTrackingProcessor$5.create(TimeTrackingProcessor.java:96)
+    	at org.gradle.api.internal.tasks.compile.processing.TimeTrackingProcessor.track(TimeTrackingProcessor.java:117)
+    	at org.gradle.api.internal.tasks.compile.processing.TimeTrackingProcessor.process(TimeTrackingProcessor.java:96)
+    	at jdk.compiler/com.sun.tools.javac.processing.JavacProcessingEnvironment.callProcessor(JavacProcessingEnvironment.java:985)
+    	at jdk.compiler/com.sun.tools.javac.processing.JavacProcessingEnvironment.discoverAndRunProcs(JavacProcessingEnvironment.java:901)
+    	at jdk.compiler/com.sun.tools.javac.processing.JavacProcessingEnvironment$Round.run(JavacProcessingEnvironment.java:1227)
+    	at jdk.compiler/com.sun.tools.javac.processing.JavacProcessingEnvironment.doProcessing(JavacProcessingEnvironment.java:1340)
+    	at jdk.compiler/com.sun.tools.javac.main.JavaCompiler.processAnnotations(JavaCompiler.java:1254)
+    	at jdk.compiler/com.sun.tools.javac.main.JavaCompiler.compile(JavaCompiler.java:936)
+    	at jdk.compiler/com.sun.tools.javac.api.JavacTaskImpl.lambda$doCall$0(JavacTaskImpl.java:104)
+    	at jdk.compiler/com.sun.tools.javac.api.JavacTaskImpl.handleExceptions(JavacTaskImpl.java:147)
+    	at jdk.compiler/com.sun.tools.javac.api.JavacTaskImpl.doCall(JavacTaskImpl.java:100)
+    	at jdk.compiler/com.sun.tools.javac.api.JavacTaskImpl.call(JavacTaskImpl.java:94)
+    	at org.gradle.internal.compiler.java.IncrementalCompileTask.call(IncrementalCompileTask.java:92)
+    	at org.gradle.api.internal.tasks.compile.AnnotationProcessingCompileTask.call(AnnotationProcessingCompileTask.java:94)
+    	at org.gradle.api.internal.tasks.compile.ResourceCleaningCompilationTask.call(ResourceCleaningCompilationTask.java:57)
+    	at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:83)
+    	at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:50)
+    	at org.gradle.api.internal.tasks.compile.daemon.AbstractIsolatedCompilerWorkerExecutor$CompilerWorkAction.execute(AbstractIsolatedCompilerWorkerExecutor.java:78)
+    	at org.gradle.workers.internal.DefaultWorkerServer.execute(DefaultWorkerServer.java:63)
+    	at org.gradle.workers.internal.AbstractClassLoaderWorker$1.create(AbstractClassLoaderWorker.java:54)
+    	at org.gradle.workers.internal.AbstractClassLoaderWorker$1.create(AbstractClassLoaderWorker.java:48)
+    	at org.gradle.internal.classloader.ClassLoaderUtils.executeInClassloader(ClassLoaderUtils.java:100)
+    	at org.gradle.workers.internal.AbstractClassLoaderWorker.executeInClassLoader(AbstractClassLoaderWorker.java:48)
+    	at org.gradle.workers.internal.FlatClassLoaderWorker.run(FlatClassLoaderWorker.java:32)
+    	at org.gradle.workers.internal.FlatClassLoaderWorker.run(FlatClassLoaderWorker.java:22)
+    	at org.gradle.workers.internal.WorkerDaemonServer.run(WorkerDaemonServer.java:107)
+    	at org.gradle.workers.internal.WorkerDaemonServer.run(WorkerDaemonServer.java:76)
+    	at org.gradle.process.internal.worker.request.WorkerAction$1.call(WorkerAction.java:176)
+    	at org.gradle.process.internal.worker.child.WorkerLogEventListener.withWorkerLoggingProtocol(WorkerLogEventListener.java:41)
+    	at org.gradle.process.internal.worker.request.WorkerAction.lambda$run$1(WorkerAction.java:173)
+    	at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:85)
+    	at org.gradle.process.internal.worker.request.WorkerAction.run(WorkerAction.java:165)
+    	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+    	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+    	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+    	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+    	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+    	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
+    	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+    	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:48)
+    	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+    	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+    	at java.base/java.lang.Thread.run(Thread.java:829)
+  1 error
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to get full insights.
+
+BUILD FAILED in 22s
+20 actionable tasks: 2 executed, 18 up-to-date
